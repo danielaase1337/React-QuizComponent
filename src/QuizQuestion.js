@@ -14,7 +14,7 @@ class QuizQuestion extends Component {
     handleClick(button_text){
         const showNext = button_text === this.props.quiz_question.answer
 
-        this.setState(state => ({
+        this.setState(() => ({
             incorrectAnswer: showNext ? false : true 
         }));
 
